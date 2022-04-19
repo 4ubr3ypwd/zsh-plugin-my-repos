@@ -29,11 +29,11 @@ function __watchrepo {
 }
 
 # Watch these repositories for dirtiness.
-__watchrepo "$HOME/Repos/github.com/aubreypwd/iTerm2"
-__watchrepo "$HOME/Repos/github.com/aubreypwd/Alfred.alfredpreferences"
-__watchrepo "$HOME/Repos/github.com/aubreypwd/subl-snippets"
-__watchrepo "$HOME/Repos/github.com/aubreypwd/safari-user-scripts"
 __watchrepo "$HOME/iCloud/Profile Photos"
+__watchrepo "$HOME/Repos/github.com/aubreypwd/Alfred.alfredpreferences"
+__watchrepo "$HOME/Repos/github.com/aubreypwd/iTerm2"
+__watchrepo "$HOME/Repos/github.com/aubreypwd/safari-user-scripts"
+__watchrepo "$HOME/Repos/github.com/aubreypwd/subl-snippets"
 
 # My ZSH plugins/configurations.
 __watchrepo "$HOME/.antigen/bundles/aubreypwd/zsh-plugin-my-aliases"

@@ -1,24 +1,18 @@
-# ``
+# My Repos
 
-Description
-
-## Usage
-
-```bash
-```
+Just a simple tool that helps me keep track of repos that change.
 
 ## Requires
 
-- `...`<sup>*</sup>
-
-<sup>*</sup> If using [homebrew](https://brew.sh) on macOS, these will automatically be installed.
+- https://github.com/aubreypwd/zsh-plugin-require
+- https://github.com/aubreypwd/zsh-plugin-git-is-clean
 
 ## Install
 
 Using [antigen](https://github.com/zsh-users/antigen):
 
 ```bash
-antigen bundle aubreypwd/zsh-plugin-NAME@1.0.0
+antigen bundle aubreypwd/zsh-plugin-my-repos
 ```
 
 ## Development
@@ -26,15 +20,7 @@ antigen bundle aubreypwd/zsh-plugin-NAME@1.0.0
 Install the package on `master`:
 
 ```bash
-antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-NAME
+antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-my-repos
 ```
 
-...and contribute upstream by working in `$HOME/.antigen/bundles/aubreypwd/zsh-plugin-NAME`.
-
----
-
-## Changelog
-
-### 1.0.0
-
-- First version
+...and contribute upstream by working in `$HOME/.antigen/bundles/aubreypwd/zsh-plugin-my-repos`.

@@ -6,11 +6,6 @@
  # @since Tuesday, April 19, 2022
  ##
 
-if [[ $(command -v antigen) ]]; then
-	antigen bundle aubreypwd/zsh-plugin-require
-	antigen bundle aubreypwd/zsh-plugin-git-is-clean
-fi
-
 ###
  # A way to output a dirty message.
  #

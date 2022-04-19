@@ -9,7 +9,6 @@
 if [[ $(command -v antigen) ]]; then
 	antigen bundle aubreypwd/zsh-plugin-require
 	antigen bundle aubreypwd/zsh-plugin-git-is-clean
-	antigen apply
 fi
 
 ###

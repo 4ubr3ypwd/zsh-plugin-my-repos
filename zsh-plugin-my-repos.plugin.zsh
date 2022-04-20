@@ -58,7 +58,11 @@ function checkmyrepos {
 		echo "vcsh missing, please install so I can watch pub and priv!"
 	else
 
-		# Have to do something special here for vcsh.
+		# First, send up modified things automatically.
+		vcsh pub pew &> /dev/null &
+		vcsh priv pew &> /dev/null &
+
+		# Then check if we have anything else after that going on with vcsh.
 		vcsh pub diff-index --quiet --ignore-submodules HEAD || __dirty_message "pub"
 		vcsh priv diff-index --quiet --ignore-submodules HEAD || __dirty_message "priv"
 	fi

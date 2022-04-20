@@ -31,11 +31,17 @@ function __watchrepo {
 ###
  # Call this function to watch these repos.
  #
+ # Not git pew is an alias in my .gitconfig
+ #
  # E.g: checkmyrepos
  #
  # @since Wednesday, April 20, 2022
  ##
 function checkmyrepos {
+
+	# Send updates upstream for these before we check them.
+	git --git-dir ~/Repos/github.com/aubreypwd/Alfred.alfredpreferences/.git pew &> /dev/null
+	git --git-dir ~/Repos/github.com/aubreypwd/iTerm2/.git pew &> /dev/null
 
 	# Watch these repositories for dirtiness.
 	__watchrepo "$HOME/iCloud/Profile Photos"
@@ -59,8 +65,8 @@ function checkmyrepos {
 	else
 
 		# First, send up modified things automatically.
-		vcsh pub pew &> /dev/null &
-		vcsh priv pew &> /dev/null &
+		vcsh pub pew &> /dev/null
+		vcsh priv pew &> /dev/null
 
 		# Then check if we have anything else after that going on with vcsh.
 		vcsh pub diff-index --quiet --ignore-submodules HEAD || __dirty_message "pub"

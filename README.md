@@ -15,6 +15,8 @@ Using [antigen](https://github.com/zsh-users/antigen):
 antigen bundle aubreypwd/zsh-plugin-my-repos
 ```
 
+Then add `checkmyrepos` to your `.zshrc` file where you want to check your repos.
+
 ## Development
 
 Install the package on `master`:
